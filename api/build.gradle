@@ -1,0 +1,16 @@
+plugins {
+    id 'com.epam.multiproject.java-application-conventions'
+}
+
+group 'com.epam'
+version '1.0.0'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+dependencies {
+    implementation project(':core')
+}
+
+application {
+    mainClass = 'com.epam.api.App'
+}
