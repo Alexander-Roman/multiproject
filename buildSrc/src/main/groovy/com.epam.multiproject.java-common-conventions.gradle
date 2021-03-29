@@ -1,14 +1,11 @@
 plugins {
-    // Apply the java Plugin to add support for Java.
     id 'java'
 }
 
 repositories {
-    // Maven repository server
     maven {
         allowInsecureProtocol = true
         url = "http://localhost:8080/repository/internal/"
     }
-    // Use JCenter for resolving dependencies.
     jcenter()
 }
